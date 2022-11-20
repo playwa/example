@@ -1,4 +1,4 @@
-import { Injectable } from '@playwa/common';
+import { Injectable } from '@playwajs/common';
 
 @Injectable()
 export class AppService {

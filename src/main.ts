@@ -1,9 +1,12 @@
+import 'dotenv/config';
+
 import { 
   fetchLatestBaileysVersion,
   useMultiFileAuthState,
 } from '@adiwajshing/baileys';
 
-import { WAFactory } from '@playwa/core';
+import { WAFactory } from '@playwajs/core';
+
 import { AppModule } from './app.module';
 
 async function connectToWhatsapp() {
@@ -13,8 +16,8 @@ async function connectToWhatsapp() {
   const app = await WAFactory.create(AppModule, {
     version,
     auth: state,
-    saveCreds,
     printQRInTerminal: true,
+    saveCreds
   });
 
   await app.listen();
