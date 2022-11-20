@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.ts",
   "scripts": {
-    "start:dev": "ts-node-dev --respawn src/main.ts"
+    "start:dev": "ts-node-dev --ignore-watch node_modules --respawn src/main.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -12,9 +13,9 @@
   "dependencies": {
     "@adiwajshing/baileys": "^4.4.0",
     "@playwajs/builders": "^1.1.0",
-    "@playwajs/client": "^1.1.0",
+    "@playwajs/client": "^1.1.1",
     "@playwajs/common": "^1.1.0",
-    "@playwajs/core": "^1.1.0",
+    "@playwajs/core": "^1.1.1",
     "@playwajs/schedule": "^1.1.0",
     "dotenv": "^16.0.3",
     "reflect-metadata": "^0.1.13"
